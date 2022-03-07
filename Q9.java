@@ -1,4 +1,5 @@
-void bubbleSort(int arr[])
+public class Q9 {
+    public static void bubbleSort(int arr[])
     {
         int n = arr.length;
         for (int i = 0; i < n-1; i++)
@@ -12,8 +13,7 @@ void bubbleSort(int arr[])
                 }
     }
   
-    /* Prints the array */
-    void printArray(int arr[])
+    public static void printArray(int arr[])
     {
         int n = arr.length;
         for (int i=0; i<n; ++i)
@@ -21,12 +21,13 @@ void bubbleSort(int arr[])
         System.out.println();
     }
   
-    // Driver method to test above
     public static void main(String args[])
     {
-        BubbleSort ob = new BubbleSort();
         int arr[] = {64, 34, 25, 12, 22, 11, 90};
-        ob.bubbleSort(arr);
+        bubbleSort(arr);
         System.out.println("Sorted array");
-        ob.printArray(arr);
+        printArray(arr);
     }
+
+    
+}
